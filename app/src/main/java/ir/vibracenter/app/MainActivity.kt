@@ -118,7 +118,7 @@ class MainActivity : AppCompatActivity() {
                 // tel:, mailto:, whatsapp:, intent: ... open in the matching app
                 try {
                     startActivity(Intent(Intent.ACTION_VIEW, request.url))
-                } catch (_: Exception) {
+                } catch (e: Exception) {
                     // no app can handle it - ignore
                 }
                 return true
@@ -152,7 +152,7 @@ class MainActivity : AppCompatActivity() {
         webView.setDownloadListener { url, _, _, _, _ ->
             try {
                 startActivity(Intent(Intent.ACTION_VIEW, android.net.Uri.parse(url)))
-            } catch (_: Exception) {
+            } catch (e: Exception) {
             }
         }
     }
@@ -191,7 +191,7 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         try {
             connectivityManager.registerDefaultNetworkCallback(networkCallback)
-        } catch (_: Exception) {
+        } catch (e: Exception) {
         }
     }
 
@@ -199,7 +199,7 @@ class MainActivity : AppCompatActivity() {
         super.onStop()
         try {
             connectivityManager.unregisterNetworkCallback(networkCallback)
-        } catch (_: Exception) {
+        } catch (e: Exception) {
         }
     }
 
