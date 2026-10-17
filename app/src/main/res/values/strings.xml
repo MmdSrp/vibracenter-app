@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vibra Center</string>
+    <string name="error_message">اینترنتت مشکل داره!\nاتصالت رو چک کن و صفحه رو رفرش کن.</string>
+    <string name="retry">رفرش صفحه</string>
+    <string name="offline_banner">اینترنت قطعه؛ نسخه ذخیره‌شده نمایش داده می‌شه. اتصالت رو چک کن.</string>
+</resources>

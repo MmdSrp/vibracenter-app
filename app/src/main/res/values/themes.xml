@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.VibraCenter" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#1E5BFF</item>
+        <item name="colorPrimaryDark">#1E5BFF</item>
+        <item name="colorAccent">#1E5BFF</item>
+        <item name="android:statusBarColor">#FFFFFF</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+</resources>
